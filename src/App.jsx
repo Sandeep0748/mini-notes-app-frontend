@@ -11,7 +11,7 @@ function App() {
   const [search, setSearch] = useState('')
   const [editingNote, setEditingNote] = useState(null)
 
-  const API_URL = '/api/notes'
+  const API_URL = `${import.meta.env.VITE_API_URL}/api/notes`
 
   // Fetch all notes
   const fetchNotes = async (searchTerm = '') => {
